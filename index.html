@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Adios</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+  
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000 0%, #8B0000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#desamorMessage {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div id="desamorCard" class="card">
+        <p id="desamorMessage">Tal vez no haya sido la respuesta que con ansias anhelaba, 
+            pero estoy satisfecho sabiendo que al menos te dije con sinceridad cuánto me gustas.....
+            <p style="color: red"> Dale Click a la pantalla
+            </spam></p>
+    </div>
+    <script>
+        document.getElementById('desamorCard').addEventListener('click', function() {
+    const messages = [
+        "Y esa sonrisa que irradia de tu rostro, nunca la pierdas...",
+        "Sere fan tuyo y de tu belleza, desde lo mas lejano que se pueda.",
+        "Desde lo más lejano en el rincón del desamor, admiraré tu belleza que irradia como la luz del sol.",
+        "Aprender a caminar sin ti es aprender a ser fuerte.",
+        "con el ultimo mensaje, decirte que no dejes de sonreir, eres increible con tu alegria congias a los demas admirare lo que eres desde lejos, Gracias por tomarte la molestia de leerme..."
+    ];
+
+    const messageElement = document.getElementById('desamorMessage');
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    messageElement.textContent = messages[randomIndex];
+});
+
+    </script>
+</body>
+</html>
